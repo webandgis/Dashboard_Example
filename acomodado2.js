@@ -373,7 +373,7 @@ function onEachFeature(feature, layer) {
     className: 'my-tooltip'
   });
   
-  let labels = ['Población total', 'Total de hombres', 'Total de mujeres'];
+  let labels = ['Población total', 'Viviendas', 'Hogares'];
  let data = [feature.properties.tot_pob, feature.properties.tot_muj, feature.properties.tot_hom];
 
  
@@ -390,8 +390,8 @@ function onEachFeature(feature, layer) {
  
   
   let overview = 'Población Total: ' + feature.properties.tot_pob + "<br/>";
-  overview += 'Hombres: ' + feature.properties.tot_muj + "<br/>";
-  overview += 'Mujeres: ' + feature.properties.tot_hom + "<br/>";
+  overview += 'Hogares: ' + feature.properties.tot_muj + "<br/>";
+  overview += 'Viviendas: ' + feature.properties.tot_hom + "<br/>";
   
 
   let popUpContent= ('<h4>Departamento: ' + feature.properties.NAME_1  + "<br/>" + overview);
